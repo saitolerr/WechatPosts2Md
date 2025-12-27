@@ -5,7 +5,7 @@ main:
           image: tencentcom/git-sync
           imports: https://cnb.cool/saitolers/SECRETS/-/blob/main/secrets.yml
           settings:
-            target_url: https://github.com/Saitoler/WechatPosts2Md.git
+            target_url: https://github.com/saitolerr/WechatPosts2Md.git
             auth_type: https
             username: $SYNC_GIT_USERNAME
             password: $SYNC_GIT_TOKEN
