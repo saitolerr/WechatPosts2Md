@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>微信公众号转 Markdown</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>📝 公众号转 MD</h1>
+    </header>
+    
+    <main>
+      <div id="status" class="status"></div>
+      
+      <!-- 图片选项已隐藏，默认使用原链接模式 -->
+      <div class="options" style="display: none;">
+        <h3>图片处理方式</h3>
+        <label class="option">
+          <input type="radio" name="imageMode" value="download">
+          <span class="radio-custom"></span>
+          <span class="option-text">
+            <strong>下载到本地</strong>
+            <small>图片单独下载，MD 使用相对路径</small>
+          </span>
+        </label>
+        <label class="option">
+          <input type="radio" name="imageMode" value="base64">
+          <span class="radio-custom"></span>
+          <span class="option-text">
+            <strong>Base64 嵌入</strong>
+            <small>图片嵌入 MD 文件，便于分享</small>
+          </span>
+        </label>
+        <label class="option">
+          <input type="radio" name="imageMode" value="original" checked>
+          <span class="radio-custom"></span>
+          <span class="option-text">
+            <strong>保留原链接</strong>
+            <small>快速但可能失效</small>
+          </span>
+        </label>
+      </div>
+
+      <div class="options">
+        <label class="checkbox-option">
+          <input type="checkbox" id="includeMetadata" checked>
+          <span class="checkbox-custom"></span>
+          <span>包含元信息（作者、日期等）</span>
+        </label>
+      </div>
+
+      <button id="convertBtn" class="btn-primary">
+        <span class="btn-text">🚀 开始转换</span>
+        <span class="btn-loading">转换中...</span>
+      </button>
+
+      <div id="result" class="result hidden">
+        <div class="result-header">
+          <span>✅ 转换完成</span>
+        </div>
+        <div class="result-actions">
+          <button id="copyBtn" class="btn-secondary">📋 复制 Markdown</button>
+          <button id="downloadBtn" class="btn-secondary">💾 下载文件</button>
+        </div>
+      </div>
+
+      <div id="error" class="error hidden"></div>
+    </main>
+
+    <footer>
+      <p>请在微信公众号文章页面使用</p>
+    </footer>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
+

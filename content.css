@@ -1,0 +1,25 @@
+/* Content script 样式 - 可以用于在页面上添加转换提示等 */
+
+/* 转换中的遮罩层 */
+.wechat-md-converting {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 99999;
+}
+
+.wechat-md-converting-text {
+  background: #fff;
+  padding: 20px 40px;
+  border-radius: 8px;
+  font-size: 16px;
+  color: #333;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
