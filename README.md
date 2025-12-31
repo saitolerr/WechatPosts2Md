@@ -37,8 +37,8 @@
 
 ### 方式二：从商店安装
 
-- Edge 商店：*即将上线*  
-- store_assets  目录下为上架备案时所需素材
+- Edge 商店：[点此下载](https://microsoftedge.microsoft.com/addons/detail/nfopjnegiibpjdilhophlbnanbkbejda)   
+>  store_assets  目录下为上架备案时所需素材
 
 ## 🚀 使用方法
 
