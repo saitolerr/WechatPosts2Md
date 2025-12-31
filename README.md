@@ -105,7 +105,10 @@ python generate_store_assets.py
 
 ## 📄 License
 
-MIT
+MIT  
+
+## Github   
+> 已同步更新至 github 账号 saitolers@163.com 
 
 ---
 
